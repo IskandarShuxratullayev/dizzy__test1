@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f7ec9e;
+}
+.container {
+    margin: 0 auto;
+    width: 1125px;
+}
+header {
+    background-image: url('../img/header__img.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 32vh;
+}
+.navbar nav {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 265px;
+    position: absolute;
+    right: 10px;
+}
+.navbar li {
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Pangolin', cursive;
+    font-style: italic;
+    font-size: 30px;
+    -webkit-text-stroke: .6px red;
+    margin-left: 14px;
+}
+.product__card {
+    display: flex;
+    margin-top: 20px;
+}
+.card {
+    width: 255px;
+    height: 285px;
+    background: linear-gradient(to bottom, #fec400, #ebfd00);
+    border: 10px solid #feaa09;
+    border-image: linear-gradient(to top bottom, #feaa09, #fc3f2c);
+    border-image-slice: 1;
+    border-radius: 5px;
+}
+.card__container {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+.card__info {
+    margin-left: 22px;
+}
+.card h5 {
+    font-family: "Bauhaus 93 V2";
+    font-size: 33px;
+    color: #fff;
+    -webkit-text-stroke: .6px #000;
+    text-align: right;
+}
+.card img {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card__info h1 {
+    font-size: 52px;
+    font-style: italic;
+    font-family: "Bauhaus 93 V2";
+    color: #ff00d2;
+    text-transform: uppercase;
+}
+.card__info:hover {
+    transform: translateY(-20px);
+    transition: all .4s;
+}
+.news_card__container {
+    display: flex;
+    justify-content: space-between;
+}
+.news__intro h1{
+    font-family: 'Pangolin', cursive;
+    font-style: italic;
+    font-size: 30px;
+    text-transform: uppercase;
+    -webkit-text-stroke: .6px #ff00ff;
+}
+.news__menu {
+    height: 753px;
+    width: 334px;
+    background-color: #ebd0f1;
+    position: absolute;
+    right: 0;
+    border-left: 10px solid #ff00ff;
+    border-bottom: 10px solid #ff00ff;
+}
+footer {
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 50px;
+    background-color: #000;
+    margin-top: 100px;
+}
+.footer__img {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80%;
+}
+.footer__img img {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+.footer__img svg {
+    margin-left: 30px;
+}
+
+
+@media only screen and (max-width: 1131px) {
+    header {
+        background-image: url('../img/header__img.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 362px;
+    }
+    .card__container {
+        flex-direction: column;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    .card__info {
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 614px) {
+    .news_card__container {
+        flex-direction: column;
+    }
+}
